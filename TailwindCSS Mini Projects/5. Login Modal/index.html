@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Login Modal</title>
+  </head>
+  <body class="font-serif">
+    <!-- Global Container -->
+    <div class="flex justify-center items-center bg-cyan-600 py-8 min-h-screen">
+      <!-- Card Container -->
+      <div
+        class="flex flex-col md:flex-row bg-white w-full md:w-3/5 md:-my-4 my-1 mx-2.5 rounded-md overflow-hidden"
+      >
+        <div class="md:basis-2/5 relative md:order-2">
+          <img
+            src="./Images/sea-image.jpg"
+            class="w-full h-full block object-cover"
+          />
+          <i
+            class="fa-solid fa-circle-xmark absolute top-4 right-4 text-zinc-700 text-4xl cursor-pointer hover:text-blue-900 duration-500"
+          ></i>
+        </div>
+
+        <div class="md:basis-3/5 md:p-20 p-6 md:order-1">
+          <h1 class="text-black text-4xl font-bold">Log in</h1>
+          <p class="text-gray-600 py-4">
+            Log in to your account to upload or download pictures, videos, and
+            songs.
+          </p>
+          <input
+            type="email"
+            class="block w-full border border-zinc-600 focus:outline-none px-2 py-5 text-xl shadow-md rounded-md"
+            placeholder="Enter your email address"
+          />
+          <div class="flex justify-between items-center mt-8">
+            <p class="text-cyan-600 hover:underline cursor-pointer">
+              Forgot password?
+            </p>
+            <button
+              class="bg-cyan-600 py-6 px-9 hover:bg-cyan-500 duration-1000 rounded-lg text-white"
+            >
+              Next
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+
+          <!-- Content Divider -->
+          <div class="w-full h-0.5 bg-gray-300 my-8"></div>
+          <!-- Content Divider ends -->
+          <p class="text-center text-gray-400">Or log in with</p>
+          <div class="flex justify-center gap-20 items-center mt-12">
+            <div
+              class="text-center text-blue-700 border cursor-pointer duration-1000 text-3xl hover:bg-cyan-200 py-4 md:px-12 px-6"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div
+              class="text-center text-red-700 border cursor-pointer hover:bg-cyan-200 duration-1000 py-4 text-3xl md:px-12 px-6"
+            >
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
