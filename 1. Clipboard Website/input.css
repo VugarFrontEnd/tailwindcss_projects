@@ -16,10 +16,10 @@ body {
 .section-container {
   @apply max-w-6xl mx-auto text-center px-10;
 }
-.button-container {
+.buttons-container {
   @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
 }
-.anchor-button {
+.button {
   @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
 }
 .section-main-paragraph {
